@@ -1,0 +1,5 @@
+('sickle', 'Reaping sickle',1, 0, 1);
+('fishbait', 'Fish Bait', 30, 0, 1);
+('fishingrod', 'Fishing Rod', 2, 0, 1);
+('turtlebait', 'Turtle Bait', 10, 0, 1);
+('hatchet_lj', 'Lumbering axe', 1, 0, 1),

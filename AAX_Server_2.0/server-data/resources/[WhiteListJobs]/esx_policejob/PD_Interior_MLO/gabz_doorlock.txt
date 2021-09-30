@@ -1,0 +1,29 @@
+	-- MAFIA LEAKS
+	------ NEW MRPD DOORS
+	
+
+
+
+	{
+		objName = 'gabz_mrpd_door_04',
+		objCoords  = {x = 445.56, y = -983.48, z = 30.8},
+		textCoords = {x = 445.56, y = -983.48, z = 30.8},
+		authorizedJobs = { 'police' },
+		locked = true,
+		distance = 1,
+		size = 1
+	},
+	{
+		objName = 'gabz_mrpd_door_04',
+		objCoords  = {x = 458.72, y = -977.72, z = 30.8},
+		textCoords = {x = 458.72, y = -977.72, z = 30.8},
+		authorizedJobs = { 'police' },
+		locked = true,
+		distance = 1,
+		size = 1
+	},
+
+
+
+
+	
