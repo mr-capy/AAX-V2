@@ -68,25 +68,7 @@ INSERT INTO `addon_account_data` (`id`, `account_name`, `money`, `owner`) VALUES
 (2, 'society_cardealer', 0, NULL),
 (3, 'society_mechanic', 2142911647, NULL),
 (4, 'society_police', 0, NULL),
-(5, 'society_realestateagent', 0, NULL),
-(6, 'property_black_money', 0, 'steam:11000013d58ae46'),
-(7, 'property_black_money', 0, 'steam:11000013df21d65'),
-(8, 'property_black_money', 0, 'steam:11000013f682f9e'),
-(9, 'property_black_money', 0, 'steam:1100001444d71c1'),
-(10, 'property_black_money', 0, 'steam:110000145025243'),
-(17, 'property_black_money', 0, 'steam:11000011a11d194'),
-(19, 'property_black_money', 0, 'steam:11000013f6ae750'),
-(22, 'property_black_money', 0, 'steam:1100001406d3e94'),
-(23, 'property_black_money', 0, 'steam:1100001008cc2e5'),
-(24, 'property_black_money', 0, 'steam:110000131ddfd6b'),
-(25, 'property_black_money', 0, 'steam:110000135d3d4f5'),
-(26, 'property_black_money', 0, 'steam:110000143c8f56c'),
-(27, 'property_black_money', 0, 'steam:110000145aec4b4'),
-(28, 'property_black_money', 0, 'steam:1100001350d29f5'),
-(29, 'society_venom', 0, NULL),
-(30, 'property_black_money', 0, 'steam:11000013fd42b2f'),
-(31, 'property_black_money', 0, 'steam:110000143fec50d'),
-(32, 'property_black_money', 0, 'steam:11000014663cd14');
+(5, 'society_realestateagent', 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -286,17 +268,7 @@ INSERT INTO `datastore_data` (`id`, `name`, `owner`, `data`) VALUES
 (102, 'society_ambulance', NULL, '{}'),
 (103, 'society_mechanic', NULL, '{}'),
 (104, 'society_police', NULL, '{}'),
-(105, 'society_venom', NULL, '{}'),
-(106, 'property', 'steam:11000013df21d65', '{}'),
-(107, 'user_ears', 'steam:11000013df21d65', '{}'),
-(108, 'user_glasses', 'steam:11000013df21d65', '{}'),
-(109, 'user_helmet', 'steam:11000013df21d65', '{}'),
-(110, 'user_mask', 'steam:11000013df21d65', '{}'),
-(111, 'property', 'steam:11000013d58ae46', '{}'),
-(112, 'user_ears', 'steam:11000013d58ae46', '{}'),
-(113, 'user_glasses', 'steam:11000013d58ae46', '{}'),
-(114, 'user_helmet', 'steam:11000013d58ae46', '{}'),
-(115, 'user_mask', 'steam:11000013d58ae46', '{}');
+(105, 'society_venom', NULL, '{}');
 
 -- --------------------------------------------------------
 
@@ -324,9 +296,6 @@ CREATE TABLE `dpkeybinds` (
 -- Dumping data for table `dpkeybinds`
 --
 
-INSERT INTO `dpkeybinds` (`id`, `keybind1`, `emote1`, `keybind2`, `emote2`, `keybind3`, `emote3`, `keybind4`, `emote4`, `keybind5`, `emote5`, `keybind6`, `emote6`) VALUES
-('steam:11000013df21d65', 'num4', '', 'num5', '', 'num6', '', 'num7', '', 'num8', '', 'num9', ''),
-('steam:11000013d58ae46', 'num4', '', 'num5', '', 'num6', '', 'num7', '', 'num8', '', 'num9', '');
 
 -- --------------------------------------------------------
 
@@ -1071,14 +1040,6 @@ CREATE TABLE `users` (
   `bank` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`identifier`, `license`, `money`, `name`, `skin`, `job`, `job_grade`, `loadout`, `position`, `permission_level`, `group`, `firstname`, `lastname`, `dateofbirth`, `sex`, `height`, `status`, `is_dead`, `phone_number`, `last_property`, `bank`) VALUES
-('steam:11000013d58ae46', 'license:1c17a180cdad995771fea75248f0ed95569b9e6a', 5000, 'Wajid', '{\"chest_2\":0,\"helmet_1\":-1,\"glasses_2\":0,\"pants_1\":0,\"chain_1\":0,\"tshirt_2\":0,\"bodyb_1\":0,\"eyebrows_2\":0,\"eyebrows_1\":0,\"hair_1\":0,\"age_1\":0,\"arms\":0,\"bodyb_2\":0,\"chest_1\":0,\"watches_2\":0,\"shoes_1\":0,\"hair_color_1\":0,\"bags_1\":0,\"lipstick_1\":0,\"beard_4\":0,\"bproof_1\":0,\"complexion_2\":0,\"blush_1\":0,\"lipstick_2\":0,\"arms_2\":0,\"complexion_1\":0,\"makeup_4\":0,\"decals_2\":0,\"beard_3\":0,\"blemishes_1\":0,\"hair_2\":0,\"makeup_1\":0,\"blemishes_2\":0,\"bracelets_2\":0,\"ears_1\":-1,\"moles_1\":0,\"watches_1\":-1,\"sex\":0,\"makeup_2\":0,\"torso_1\":0,\"mask_1\":0,\"eye_color\":0,\"helmet_2\":0,\"sun_1\":0,\"skin\":0,\"chain_2\":0,\"lipstick_3\":0,\"decals_1\":0,\"mask_2\":0,\"sun_2\":0,\"lipstick_4\":0,\"bags_2\":0,\"bproof_2\":0,\"hair_color_2\":0,\"blush_2\":0,\"blush_3\":0,\"pants_2\":0,\"chest_3\":0,\"eyebrows_4\":0,\"makeup_3\":0,\"face\":0,\"ears_2\":0,\"shoes_2\":0,\"torso_2\":0,\"bracelets_1\":-1,\"beard_1\":0,\"glasses_1\":0,\"eyebrows_3\":0,\"age_2\":0,\"moles_2\":0,\"tshirt_1\":0,\"beard_2\":0}', 'police', 4, '[]', '{\"x\":-0.0,\"y\":-0.0,\"z\":71.2}', 0, 'user', 'Mr', 'Capy', '11/12/1996', 'm', '48', '[{\"val\":902500,\"percent\":90.25,\"name\":\"hunger\"},{\"val\":926875,\"percent\":92.6875,\"name\":\"thirst\"},{\"val\":0,\"percent\":0.0,\"name\":\"drunk\"}]', 0, '757-1001', NULL, 50000),
-('steam:11000013df21d65', 'license:d1ff1fbf8135ee6ac7b9fafdbaa15599235fed30', 5000, 'Aj', '{\"chest_2\":0,\"helmet_1\":-1,\"glasses_2\":0,\"pants_1\":0,\"chain_1\":0,\"tshirt_2\":0,\"lipstick_3\":0,\"eyebrows_2\":0,\"eyebrows_1\":0,\"hair_1\":0,\"age_1\":0,\"arms\":0,\"bodyb_2\":0,\"sun_1\":0,\"bracelets_1\":-1,\"shoes_1\":0,\"hair_color_1\":0,\"bags_1\":0,\"lipstick_1\":0,\"beard_4\":0,\"bproof_1\":0,\"complexion_2\":0,\"eyebrows_3\":0,\"lipstick_2\":0,\"shoes_2\":0,\"complexion_1\":0,\"makeup_4\":0,\"age_2\":0,\"beard_3\":0,\"blemishes_1\":0,\"hair_2\":0,\"makeup_1\":0,\"blemishes_2\":0,\"bracelets_2\":0,\"ears_1\":-1,\"moles_1\":0,\"watches_1\":-1,\"sex\":0,\"makeup_2\":0,\"torso_2\":0,\"lipstick_4\":0,\"watches_2\":0,\"helmet_2\":0,\"arms_2\":0,\"skin\":3,\"sun_2\":0,\"decals_1\":0,\"glasses_1\":0,\"chain_2\":0,\"bproof_2\":0,\"bodyb_1\":0,\"bags_2\":0,\"blush_1\":0,\"face\":0,\"mask_1\":0,\"blush_3\":0,\"pants_2\":0,\"chest_3\":0,\"eyebrows_4\":0,\"makeup_3\":0,\"beard_2\":0,\"ears_2\":0,\"blush_2\":0,\"chest_1\":0,\"torso_1\":0,\"hair_color_2\":0,\"beard_1\":0,\"eye_color\":0,\"mask_2\":0,\"moles_2\":0,\"tshirt_1\":0,\"decals_2\":0}', 'unemployed', 0, '[]', '{\"x\":-226.4,\"z\":29.3,\"y\":-992.9}', 0, 'user', '', '', '', '', '', '[{\"val\":982100,\"percent\":98.21,\"name\":\"hunger\"},{\"val\":986575,\"percent\":98.6575,\"name\":\"thirst\"},{\"val\":0,\"percent\":0.0,\"name\":\"drunk\"}]', 0, '476-5240', NULL, 50000);
-
 -- --------------------------------------------------------
 
 --
@@ -1096,10 +1057,6 @@ CREATE TABLE `user_accounts` (
 -- Dumping data for table `user_accounts`
 --
 
-INSERT INTO `user_accounts` (`id`, `identifier`, `name`, `money`) VALUES
-(21, 'steam:11000013df21d65', 'black_money', 0),
-(22, 'steam:11000013d58ae46', 'black_money', 0);
-
 -- --------------------------------------------------------
 
 --
@@ -1113,91 +1070,6 @@ CREATE TABLE `user_inventory` (
   `count` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
---
--- Dumping data for table `user_inventory`
---
-
-INSERT INTO `user_inventory` (`id`, `identifier`, `item`, `count`) VALUES
-(1087, 'steam:11000013df21d65', 'fish', 0),
-(1088, 'steam:11000013df21d65', 'terminaldevice', 0),
-(1089, 'steam:11000013df21d65', 'id_card_f', 0),
-(1090, 'steam:11000013df21d65', 'lithium', 0),
-(1091, 'steam:11000013df21d65', 'meat', 0),
-(1092, 'steam:11000013df21d65', 'coke_pooch', 0),
-(1093, 'steam:11000013df21d65', 'armor', 0),
-(1094, 'steam:11000013df21d65', 'blowpipe', 0),
-(1095, 'steam:11000013df21d65', 'cannabis', 0),
-(1096, 'steam:11000013df21d65', 'sickle', 0),
-(1097, 'steam:11000013df21d65', 'leather', 0),
-(1098, 'steam:11000013df21d65', 'jewels', 0),
-(1099, 'steam:11000013df21d65', 'turtle', 0),
-(1100, 'steam:11000013df21d65', 'fishbait', 0),
-(1101, 'steam:11000013df21d65', 'acetone', 0),
-(1102, 'steam:11000013df21d65', 'bandage', 0),
-(1103, 'steam:11000013df21d65', 'bread', 0),
-(1104, 'steam:11000013df21d65', 'rice_pro', 0),
-(1105, 'steam:11000013df21d65', 'fixkit', 0),
-(1106, 'steam:11000013df21d65', 'coke', 0),
-(1107, 'steam:11000013df21d65', 'turtlebait', 0),
-(1108, 'steam:11000013df21d65', 'water', 0),
-(1109, 'steam:11000013df21d65', 'beer', 0),
-(1110, 'steam:11000013df21d65', 'fishingrod', 0),
-(1111, 'steam:11000013df21d65', 'methlab', 0),
-(1112, 'steam:11000013df21d65', 'tracker', 0),
-(1113, 'steam:11000013df21d65', 'shark', 0),
-(1114, 'steam:11000013df21d65', 'secure_card', 0),
-(1115, 'steam:11000013df21d65', 'marijuana', 0),
-(1116, 'steam:11000013df21d65', 'medikit', 0),
-(1117, 'steam:11000013df21d65', 'meth', 0),
-(1118, 'steam:11000013df21d65', 'gazbottle', 0),
-(1119, 'steam:11000013df21d65', 'radio', 0),
-(1120, 'steam:11000013df21d65', 'dairymilk', 0),
-(1121, 'steam:11000013df21d65', 'fixtool', 0),
-(1122, 'steam:11000013df21d65', 'pendrive', 0),
-(1123, 'steam:11000013df21d65', 'safecracker', 0),
-(1124, 'steam:11000013df21d65', 'rice', 0),
-(1125, 'steam:11000013df21d65', 'clip', 0),
-(1126, 'steam:11000013df21d65', 'gps', 0),
-(1127, 'steam:11000013d58ae46', 'clip', 0),
-(1128, 'steam:11000013d58ae46', 'secure_card', 0),
-(1129, 'steam:11000013d58ae46', 'radio', 0),
-(1130, 'steam:11000013d58ae46', 'coke', 0),
-(1131, 'steam:11000013d58ae46', 'bread', 0),
-(1132, 'steam:11000013d58ae46', 'terminaldevice', 0),
-(1133, 'steam:11000013d58ae46', 'meth', 0),
-(1134, 'steam:11000013d58ae46', 'jewels', 0),
-(1135, 'steam:11000013d58ae46', 'sickle', 0),
-(1136, 'steam:11000013d58ae46', 'lithium', 0),
-(1137, 'steam:11000013d58ae46', 'pendrive', 0),
-(1138, 'steam:11000013d58ae46', 'rice_pro', 0),
-(1139, 'steam:11000013d58ae46', 'rice', 0),
-(1140, 'steam:11000013d58ae46', 'marijuana', 0),
-(1141, 'steam:11000013d58ae46', 'cannabis', 0),
-(1142, 'steam:11000013d58ae46', 'gps', 0),
-(1143, 'steam:11000013d58ae46', 'acetone', 0),
-(1144, 'steam:11000013d58ae46', 'fishbait', 0),
-(1145, 'steam:11000013d58ae46', 'meat', 0),
-(1146, 'steam:11000013d58ae46', 'water', 0),
-(1147, 'steam:11000013d58ae46', 'dairymilk', 0),
-(1148, 'steam:11000013d58ae46', 'turtlebait', 0),
-(1149, 'steam:11000013d58ae46', 'fixtool', 0),
-(1150, 'steam:11000013d58ae46', 'medikit', 0),
-(1151, 'steam:11000013d58ae46', 'beer', 0),
-(1152, 'steam:11000013d58ae46', 'tracker', 0),
-(1153, 'steam:11000013d58ae46', 'coke_pooch', 0),
-(1154, 'steam:11000013d58ae46', 'shark', 0),
-(1155, 'steam:11000013d58ae46', 'fish', 0),
-(1156, 'steam:11000013d58ae46', 'safecracker', 0),
-(1157, 'steam:11000013d58ae46', 'methlab', 0),
-(1158, 'steam:11000013d58ae46', 'bandage', 0),
-(1159, 'steam:11000013d58ae46', 'blowpipe', 0),
-(1160, 'steam:11000013d58ae46', 'armor', 0),
-(1161, 'steam:11000013d58ae46', 'leather', 0),
-(1162, 'steam:11000013d58ae46', 'id_card_f', 0),
-(1163, 'steam:11000013d58ae46', 'fixkit', 0),
-(1164, 'steam:11000013d58ae46', 'gazbottle', 0),
-(1165, 'steam:11000013d58ae46', 'fishingrod', 0),
-(1166, 'steam:11000013d58ae46', 'turtle', 0);
 
 -- --------------------------------------------------------
 
