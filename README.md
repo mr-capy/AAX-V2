@@ -14,8 +14,6 @@ once again thanks to all script writers who provide best scripts.
 
 # IMPORTANT SCRIPT CHANGES:
 
-CARRY COMMAND:
-
 1) Due to fail RP I edit that script as a person can carry only dead targer.
 2) In Shop script i just write the code for gun shop and black market gun shop also add funtion so that you can also add weapon as an item in normal shop if you want.
 3) Remove Bugs and extra scripts.
